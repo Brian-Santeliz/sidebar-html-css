@@ -11,11 +11,12 @@
     position: absolute;
     text-align: center;
     /* ESCONDE EL SIDEBAR */
-    left:-200px
+    left:-200px;
+    transition:all 220ms linear;
+
 }
 #sidebar.active{
     left:0;
-
 }
 #sidebar ul li{
     border-bottom: 1px solid rgba(100,100,100,.3);
