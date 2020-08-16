@@ -10,8 +10,13 @@
     width: 200px;
     position: absolute;
     text-align: center;
+    /* ESCONDE EL SIDEBAR */
+    left:-200px
 }
+#sidebar.active{
+    left:0;
 
+}
 #sidebar ul li{
     border-bottom: 1px solid rgba(100,100,100,.3);
     padding: .9em 1em;
@@ -24,6 +29,22 @@
 }
 
 /* LOGO */
-.logo{
+#sidebar .logo{
     border-radius: 50em;
+}
+
+/* BOTON TOGGLE */
+.btn-toggle{
+    position: absolute;
+    top:2em;
+    left:15.62em;
+    cursor: pointer;
+}
+.btn-toggle span{
+    display: block;
+    font-size: 30px;
+    border:1px solid #000;
+    padding:.5em;
+    text-align: center;
+    width: 40px;
 }
